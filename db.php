@@ -1,5 +1,7 @@
 <?php
 
+function GetDb(){
+
 $servername = getenv('IP');
     $username = getenv('C9_USER');
     $password = "";
@@ -14,5 +16,5 @@ $servername = getenv('IP');
         die("Connection failed: " . $db->connect_error);
     } 
     return $db;
-
+}
 ?>
